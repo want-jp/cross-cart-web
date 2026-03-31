@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cross Cart</title>
+    <link rel="icon" type="image/png" href="https://s3.ap-northeast-1.amazonaws.com/cross-cart.jp/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <script>
+      var _paq = window._paq = window._paq || [];
+      _paq.push(['setDocumentTitle', 'web_about-us']);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//matomo.thebase.com/matomo/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+
+    <style>
+        /* About Us Specific Styles */
+        .guide-container { max-width: 1200px; margin: 0 auto; display: flex; gap: 80px; padding: 140px 20px 120px; }
+        .sidebar { width: 240px; position: sticky; top: 100px; height: fit-content; }
+        .sidebar-title { font-size: 11px; font-weight: 800; color: var(--neon-purple); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 24px; }
+        .nav-list { list-style: none; }
+        .sidebar-nav-link { text-decoration: none; color: var(--text-sub); font-size: 14px; font-weight: 500; transition: all 0.3s ease; display: block; padding: 10px 0; border-left: 2px solid transparent; padding-left: 20px; }
+        .sidebar-nav-link:hover { color: var(--text-main); }
+        .sidebar-nav-link.active { color: var(--text-main); font-weight: 700; border-left: 2px solid var(--neon-purple); }
+        .sidebar-contact { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border-warm); }
+        .contact-intro { font-size: 12px; color: var(--text-sub); margin-bottom: 12px; line-height: 1.5; }
+        .btn-contact-outline { display: block; width: 100%; padding: 12px; border: 1px solid var(--neon-purple); color: var(--neon-purple); text-align: center; text-decoration: none; font-size: 13px; font-weight: 700; border-radius: 6px; transition: all 0.3s ease; }
+        .btn-contact-outline:hover { background-color: var(--neon-purple); color: #fff; transform: translateY(-2px); box-shadow: 0 4px 15px rgba(168, 85, 247, 0.2); }
+
+        .content { flex: 1; min-width: 0; }
+        .page-header { margin-bottom: 60px; border-bottom: 1px solid var(--border-warm); padding-bottom: 40px; text-align: center; }
+        .page-title { font-size: 40px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 16px; }
+        .page-subtitle { font-size: 18px; color: var(--text-sub); font-weight: 400; line-height: 1.5; }
+        
+        .guide-section { background: var(--bg-white); border: 1px solid var(--border-warm); border-radius: 16px; padding: 54px; margin-bottom: 60px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); }
+        section[id] { scroll-margin-top: 140px; }
+        .section-headline { font-size: 24px; font-weight: 700; margin-bottom: 24px; display: flex; align-items: center; gap: 12px; color: var(--text-main); }
+        .section-intro { color: var(--text-sub); margin-bottom: 40px; font-size: 15px; line-height: 1.8; }
+
+        /* Mission & Vision Styling (Simple Text) */
+        .mission-box { background: rgba(168, 85, 247, 0.03); padding: 40px 32px; border-radius: 12px; margin-bottom: 32px; text-align: center; border: 1px solid rgba(168, 85, 247, 0.1); }
+        .mission-box h3 { font-size: 20px; font-weight: 800; margin-bottom: 16px; color: var(--text-main); line-height: 1.4; }
+        .mission-box p { font-size: 16px; color: var(--neon-purple); margin: 0; font-weight: 600; letter-spacing: 0.02em; }
+
+        /* Values Styling */
+        .values-list { list-style: none; display: grid; gap: 32px; }
+        .value-item h3 { font-size: 18px; font-weight: 700; margin-bottom: 12px; color: var(--neon-purple); }
+        .value-item p { font-size: 15px; color: var(--text-sub); line-height: 1.7; text-align: justify; }
+
+        /* Company Info Table */
+        .company-table { width: 100%; border-collapse: collapse; margin-top: 24px; font-size: 15px; }
+        .company-table th, .company-table td { padding: 16px; border-bottom: 1px solid var(--border-warm); text-align: left; vertical-align: top; }
+        .company-table th { width: 180px; color: var(--text-sub); font-weight: 600; }
+        .company-table td { color: var(--text-main); font-weight: 500; }
+        .company-table a { color: var(--neon-purple); text-decoration: none; font-weight: 600; }
+        .company-table tr:last-child th, .company-table tr:last-child td { border-bottom: none; }
+
+        @media (max-width: 900px) {
+            .guide-container { flex-direction: column; padding-top: 100px; }
+            .sidebar { width: 100%; position: static; margin-bottom: 40px; }
+            .company-table th, .company-table td { display: block; width: 100%; padding: 8px 0; }
+            .company-table th { margin-top: 16px; color: var(--neon-purple); }
+            .company-table tr:first-child th { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="/" class="header-logo"><img src="https://s3.ap-northeast-1.amazonaws.com/cross-cart.jp/images/crosscart_t.png" alt="Cross Cart"></a>
+        <button class="menu-trigger" id="menuTrigger"><span></span><span></span></button>
+    </header>
+
+    <nav class="nav-overlay" id="navOverlay">
+        <ul class="nav-menu">
+            <li class="nav-home"><a href="/" class="nav-link"><span class="sub-label">Home</span><span class="main-label">トップページ</span></a></li>
+            <li class="nav-sellers"><a href="https://cross-cart.jp/service/seller/" class="nav-link"><span class="sub-label">For Sellers</span><span class="main-label">販売主・ショップオーナー様向けガイド</span></a></li>
+            <li class="nav-buyers"><a href="https://cross-cart.jp/service/buyer/" class="nav-link"><span class="sub-label">For International Shoppers</span><span class="main-label">購入者様向けガイド</span></a></li>
+            <li class="nav-support"><a href="https://help.cross-cart.jp/hc/en-us" class="nav-link" target="_blank"><span class="sub-label">Support</span><span class="main-label">ヘルプセンター</span></a></li>
+        </ul>
+        <div class="nav-sub-links">
+            <a href="https://cross-cart.jp/about/profile/">About Us / 運営会社</a>
+            <a href="https://cross-cart.jp/legal/terms/">Terms of Service / 利用規約</a>
+            <a href="https://cross-cart.jp/legal/privacy/">Privacy Policy / プライバシーポリシー</a>
+        </div>
+    </nav>
+
+    <main class="guide-container">
+        <aside class="sidebar">
+            <div class="sidebar-title">About Us</div>
+            <nav class="nav-list">
+                <div class="nav-item"><a href="#vision" class="sidebar-nav-link active">Vision & Mission</a></div>
+                <div class="nav-item"><a href="#values" class="sidebar-nav-link">Our Values</a></div>
+                <div class="nav-item"><a href="#about" class="sidebar-nav-link">About Cross Cart</a></div>
+                <div class="nav-item"><a href="#company" class="sidebar-nav-link">Company Info</a></div>
+            </nav>
+            <div class="sidebar-contact">
+                <p class="contact-intro">Looking for help?<br>Visit our Help Center</p>
+                <a href="https://help.cross-cart.jp/hc/en-us" target="_blank" class="btn-contact-outline">
+                    Visit Help Center
+                </a>
+            </div>
+        </aside>
+
+        <article class="content">
+            <div class="page-header">
+                <h1 class="page-title">About Us</h1>
+                <p class="page-subtitle">Providing global customers with extreme convenience to access products from all over the world</p>
+            </div>
+
+            <div class="guide-section">
+                <p class="section-intro">Cross Cart is operated by want.jp Inc., a company dedicated to driving the next standard for global commerce. We provide international shopping services that connect customers worldwide to products from around the globe.</p>
+            </div>
+
+            <section id="vision" class="guide-section">
+                <h2 class="section-headline">Vision & Mission</h2>
+                
+                <div class="mission-box">
+                    <h3>世界流通の次の当たり前を作る</h3>
+                    <p>"Drive the next standard for global commerce"</p>
+                </div>
+
+                <div class="mission-box">
+                    <h3>世界中のカスタマーが世界中の商品にアクセスしフェアな価格と最高の利便性で購入できる体験を提供する</h3>
+                    <p>"Provide global customers with extreme convenience to access products from all over the world at the lowest possible price."</p>
+                </div>
+            </section>
+
+            <section id="values" class="guide-section">
+                <h2 class="section-headline">「want」ways</h2>
+                <ul class="values-list">
+                    <li class="value-item">
+                        <h3>Ownership</h3>
+                        <p>At want, every member is a stakeholder in the mission. Each of us pursues long-term value while focusing on short-term results. Everything that happens at want is matter of your own interest. While fulfilling your own role, you act with a broader perspective to benefit the entire company.</p>
+                    </li>
+                    <li class="value-item">
+                        <h3>Openness & Commitment</h3>
+                        <p>We believe in the importance of open communication no matter our job titles. If we disagree, we must respectfully discuss the issue until we reach a mutual understanding. We should avoid settling for light compromises and superficial harmony as it will lead us away from our mission. Once we reach a decision we must fully commit ourselves, regardless of our previously held viewpoints.</p>
+                    </li>
+                    <li class="value-item">
+                        <h3>Data-Driven Decisions</h3>
+                        <p>Facts and data outweigh subjective opinions. We define our true issues based on facts and data, accordingly calculate the risks, and make decisions. To ensure swift and accurate decision-making, we must regularly review and analyze the facts and data.</p>
+                    </li>
+                    <li class="value-item">
+                        <h3>Tackle</h3>
+                        <p>Speed and risk-taking are essential for achieving our mission. We must not delay decisions and actions by spending too much time on excessive research and deliberation. Since many decisions are reversible, it is worthwhile to actively take calculated risks, as this will allow us to move closer in achieving our mission.</p>
+                    </li>
+                    <li class="value-item">
+                        <h3>Scalable System & Team</h3>
+                        <p>We do not like to have our work and processes individually customized. It is necessary to standardize our operations and systems by working backwards from highly automated approaches. While it is common for work to be disrupted without certain individuals, we must put high priority on creating systems that can independently operate even without their presence.</p>
+                    </li>
+                    <li class="value-item">
+                        <h3>Transparency</h3>
+                        <p>It is crucial for all information to be open and accessible. When all members are open about their decisions and their decision-making process, it further strengthens the organization and connects each individual's actions with the mission. As every member proactively shares and obtains information, we must always consider how our own and team's actions align with the overall mission of the company.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="about" class="guide-section">
+                <h2 class="section-headline">About Cross Cart</h2>
+                <p class="section-intro">
+                    Cross Cart is our international shopping service that embodies these values and mission. We specialize in helping customers purchase products from Japanese retailers and ship them worldwide, providing the convenience and accessibility that global commerce should offer.
+                </p>
+                <h3 style="font-size:18px; font-weight:700; margin-bottom:16px;">Why Choose Cross Cart</h3>
+                <p style="font-size:15px; color:var(--text-sub); line-height:1.7;">
+                    With our deep knowledge of the Japanese market and expertise in international logistics, we provide a reliable and seamless shopping experience. Our team ensures that you can access Japan's unique products with confidence, backed by professional service and support.
+                </p>
+            </section>
+
+            <section id="company" class="guide-section">
+                <h2 class="section-headline">Company Information</h2>
+                <table class="company-table">
+                    <tr>
+                        <th>Company Name</th>
+                        <td>want.jp Inc.</td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>37F Sumitomo Fudosan Roppongi Grand Tower<br>3-2-1 Roppongi, Minato-ku, Tokyo, Japan, 106-6237</td>
+                    </tr>
+                    <tr>
+                        <th>Representative Director</th>
+                        <td>Kim Tesong</td>
+                    </tr>
+                    <tr>
+                        <th>Corporate Website</th>
+                        <td><a href="https://corp.want.jp/" target="_blank">https://corp.want.jp/</a></td>
+                    </tr>
+                    <tr>
+                        <th>Service Website</th>
+                        <td><a href="https://cross-cart.jp/" target="_blank">https://cross-cart.jp/</a></td>
+                    </tr>
+                    <tr>
+                        <th>Customer Support</th>
+                        <td><a href="mailto:support@cross-cart.jp">support@cross-cart.jp</a></td>
+                    </tr>
+                </table>
+            </section>
+
+        </article>
+    </main>
+
+    <footer id="global-footer" class="site-footer"></footer>
+
+    <script src="/js/common.js"></script>
+    
+    <script>
+        window.addEventListener('scroll', () => {
+            let current = "";
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.sidebar-nav-link');
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) current = section.getAttribute('id');
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) link.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

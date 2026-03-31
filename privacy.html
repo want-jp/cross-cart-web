@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy policy - Cross Cart</title>
+    <link rel="icon" type="image/png" href="https://s3.ap-northeast-1.amazonaws.com/cross-cart.jp/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <script>
+      var _paq = window._paq = window._paq || [];
+      _paq.push(['setDocumentTitle', 'web_privacy-policy']);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//matomo.thebase.com/matomo/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+
+    <style>
+        /* Legal Page Specific Styles */
+        .guide-container { max-width: 1200px; margin: 0 auto; display: flex; gap: 80px; padding: 140px 20px 120px; }
+        .sidebar { width: 240px; position: sticky; top: 100px; height: fit-content; }
+        .sidebar-title { font-size: 11px; font-weight: 800; color: var(--neon-purple); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 24px; }
+        .nav-list { list-style: none; max-height: 80vh; overflow-y: auto; padding-right: 10px; } /* 長いのでスクロール可に */
+        .nav-list::-webkit-scrollbar { width: 4px; }
+        .nav-list::-webkit-scrollbar-thumb { background: var(--border-warm); border-radius: 4px; }
+        
+        .sidebar-nav-link { text-decoration: none; color: var(--text-sub); font-size: 13px; font-weight: 500; transition: all 0.3s ease; display: block; padding: 8px 0; border-left: 2px solid transparent; padding-left: 20px; line-height: 1.4; }
+        .sidebar-nav-link:hover { color: var(--text-main); }
+        .sidebar-nav-link.active { color: var(--text-main); font-weight: 700; border-left: 2px solid var(--neon-purple); }
+        
+        .sidebar-contact { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border-warm); }
+        .contact-intro { font-size: 12px; color: var(--text-sub); margin-bottom: 12px; line-height: 1.5; }
+        .btn-contact-outline { display: block; width: 100%; padding: 12px; border: 1px solid var(--neon-purple); color: var(--neon-purple); text-align: center; text-decoration: none; font-size: 13px; font-weight: 700; border-radius: 6px; transition: all 0.3s ease; }
+        .btn-contact-outline:hover { background-color: var(--neon-purple); color: #fff; transform: translateY(-2px); box-shadow: 0 4px 15px rgba(168, 85, 247, 0.2); }
+
+        .content { flex: 1; min-width: 0; }
+        .page-header { margin-bottom: 60px; border-bottom: 1px solid var(--border-warm); padding-bottom: 40px; text-align: center; }
+        .page-title { font-size: 36px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 16px; }
+        .last-updated { font-size: 14px; color: var(--text-sub); font-weight: 500; }
+
+        .guide-section { background: var(--bg-white); border: 1px solid var(--border-warm); border-radius: 16px; padding: 54px; margin-bottom: 60px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); }
+        section[id] { scroll-margin-top: 140px; }
+        .section-headline { font-size: 22px; font-weight: 700; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border-warm); color: var(--text-main); }
+        
+        /* Content Typography */
+        .guide-section h3 { font-size: 18px; font-weight: 700; margin: 32px 0 16px; color: var(--text-main); }
+        .guide-section p { font-size: 15px; line-height: 1.8; color: var(--text-main); margin-bottom: 16px; }
+        .guide-section ul { margin-bottom: 24px; padding-left: 24px; }
+        .guide-section li { font-size: 15px; line-height: 1.8; margin-bottom: 8px; color: var(--text-main); }
+        .guide-section a { color: var(--neon-purple); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.3s; }
+        .guide-section a:hover { border-bottom-color: var(--neon-purple); }
+
+        /* Table Styling */
+        .policy-table-wrapper { overflow-x: auto; margin: 24px 0; border: 1px solid var(--border-warm); border-radius: 8px; }
+        .policy-table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 600px; }
+        .policy-table th { background: var(--bg-warm-light); padding: 16px; text-align: left; font-weight: 700; color: var(--text-sub); border-bottom: 1px solid var(--border-warm); }
+        .policy-table td { padding: 16px; border-bottom: 1px solid var(--border-warm); vertical-align: top; color: var(--text-main); line-height: 1.6; }
+        .policy-table tr:last-child td { border-bottom: none; }
+
+        /* Contact Info Box */
+        .contact-info-box { background: rgba(168, 85, 247, 0.03); border: 1px solid rgba(168, 85, 247, 0.1); border-radius: 12px; padding: 32px; margin-top: 24px; }
+        .contact-info-box p { margin-bottom: 8px; font-size: 15px; }
+        .contact-info-box strong { color: var(--neon-purple); }
+
+        @media (max-width: 900px) {
+            .guide-container { flex-direction: column; padding-top: 100px; }
+            .sidebar { width: 100%; position: static; margin-bottom: 40px; }
+            .nav-list { max-height: none; padding-right: 0; }
+            .guide-section { padding: 32px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="/" class="header-logo"><img src="https://s3.ap-northeast-1.amazonaws.com/cross-cart.jp/images/crosscart_t.png" alt="Cross Cart"></a>
+        <button class="menu-trigger" id="menuTrigger"><span></span><span></span></button>
+    </header>
+
+    <nav class="nav-overlay" id="navOverlay">
+        <ul class="nav-menu">
+            <li class="nav-home"><a href="/" class="nav-link"><span class="sub-label">Home</span><span class="main-label">トップページ</span></a></li>
+            <li class="nav-sellers"><a href="https://cross-cart.jp/service/seller/" class="nav-link"><span class="sub-label">For Sellers</span><span class="main-label">販売主・ショップオーナー様向けガイド</span></a></li>
+            <li class="nav-buyers"><a href="https://cross-cart.jp/service/buyer/" class="nav-link"><span class="sub-label">For International Shoppers</span><span class="main-label">購入者様向けガイド</span></a></li>
+            <li class="nav-support"><a href="https://help.cross-cart.jp/hc/en-us" class="nav-link" target="_blank"><span class="sub-label">Support</span><span class="main-label">ヘルプセンター</span></a></li>
+        </ul>
+        <div class="nav-sub-links">
+            <a href="https://cross-cart.jp/about/profile/">About Us / 運営会社</a>
+            <a href="https://cross-cart.jp/legal/terms/">Terms of Service / 利用規約</a>
+            <a href="https://cross-cart.jp/legal/privacy/">Privacy Policy / プライバシーポリシー</a>
+        </div>
+    </nav>
+
+    <main class="guide-container">
+        <aside class="sidebar">
+            <div class="sidebar-title">Index</div>
+            <nav class="nav-list">
+                <div class="nav-item"><a href="#intro" class="sidebar-nav-link active">1. Introduction</a></div>
+                <div class="nav-item"><a href="#collection" class="sidebar-nav-link">2. Personal Data We Collect</a></div>
+                <div class="nav-item"><a href="#purpose" class="sidebar-nav-link">3. Purpose & Legal Basis</a></div>
+                <div class="nav-item"><a href="#sharing" class="sidebar-nav-link">4. Personal Data We Share</a></div>
+                <div class="nav-item"><a href="#transfer" class="sidebar-nav-link">5. Data Transfer</a></div>
+                <div class="nav-item"><a href="#retention" class="sidebar-nav-link">6. Retention Period</a></div>
+                <div class="nav-item"><a href="#security" class="sidebar-nav-link">7. Security</a></div>
+                <div class="nav-item"><a href="#rights" class="sidebar-nav-link">8. Your Rights</a></div>
+                <div class="nav-item"><a href="#children" class="sidebar-nav-link">9. Children</a></div>
+                <div class="nav-item"><a href="#changes" class="sidebar-nav-link">10. Changes to Policy</a></div>
+                <div class="nav-item"><a href="#contact" class="sidebar-nav-link">11. Contact Information</a></div>
+                <div class="nav-item"><a href="#complaint" class="sidebar-nav-link">12. Right to Complaint</a></div>
+            </nav>
+            <div class="sidebar-contact">
+                <p class="contact-intro">Questions regarding privacy?<br>Contact our support.</p>
+                <a href="https://help.cross-cart.jp/hc/en-us" target="_blank" class="btn-contact-outline">
+                    Visit Help Center
+                </a>
+            </div>
+        </aside>
+
+        <article class="content">
+            <div class="page-header">
+                <h1 class="page-title">Privacy Policy<br><span style="font-size: 0.6em; color: var(--text-sub);">(For Overseas Users)</span></h1>
+                <p class="last-updated">Effective Date: January 22, 2025</p>
+            </div>
+
+            <div class="guide-section">
+                <p>Want.jp Inc. (hereinafter "we", "us") establishes the following Privacy Policy (hereinafter "this Privacy Policy") regarding the handling of personal data for customers residing outside Japan. This Privacy Policy complies with the General Data Protection Regulation and other laws and regulations related to the protection of personal information (hereinafter "GDPR, etc.").</p>
+            </div>
+
+            <section id="intro" class="guide-section">
+                <h2 class="section-headline">1. Introduction</h2>
+                <p>We will handle personal data lawfully and fairly in compliance with GDPR, etc. and in accordance with this Privacy Policy.</p>
+            </section>
+
+            <section id="collection" class="guide-section">
+                <h2 class="section-headline">2. Personal Data We Collect</h2>
+                <p>Based on GDPR, etc., we will acquire the following personal data by lawful and fair means. The information we acquire from you is provided with your consent.</p>
+
+                <h3>1. Information that you provided directly to us</h3>
+                <ul>
+                    <li>Name, address, phone number, email address</li>
+                    <li>Information about product payment and payment methods</li>
+                    <li>Information about your inquiries or communications with us</li>
+                    <li>Government-Issued Identification (driver's license, health insurance card, etc.) and information contained therein for identity verification purposes, as required by legal obligations</li>
+                    <li>Other information entered this service by you</li>
+                </ul>
+
+                <h3>2. Information we collect automatically when you use our services</h3>
+                <ul>
+                    <li>Information about the device identification of devices</li>
+                    <li>Information about the operating system, browser type, and language settings of devices</li>
+                    <li>Server log information such as timestamps about browsing activity, date and time of viewed</li>
+                    <li>Service use history of our services (viewed pages, time spent, operation history, etc.)</li>
+                    <li>Referring websites information (URL from which accessed our service site)</li>
+                    <li>Session ID for session management</li>
+                </ul>
+
+                <h3>3. Information from other sources</h3>
+                <ul>
+                    <li>Information obtained from other sources with your consent</li>
+                    <li>Information obtained based on laws</li>
+                    <li>Information obtained from publicly available sources</li>
+                </ul>
+            </section>
+
+            <section id="purpose" class="guide-section">
+                <h2 class="section-headline">3. Purpose of Process and Legal Basis for Personal Data</h2>
+                <p>We process the personal data we collect for the following purposes. The legal basis as defined by the GDPR is listed in the table below; however, the legal basis may vary depending on the jurisdiction, and we will use your personal data based on the legal basis permitted under applicable law. This legal basis includes obtaining consent to this Privacy Policy and obtaining individual consent.</p>
+
+                <div class="policy-table-wrapper">
+                    <table class="policy-table">
+                        <thead>
+                            <tr>
+                                <th>Purpose of Use</th>
+                                <th>Legal Basis under GDPR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>To provide and operate our services tailored to you (including the sale and shipment of goods, billing for services, and auto-fill functionality for registration information)</td>
+                                <td>Performance of a contract</td>
+                            </tr>
+                            <tr>
+                                <td>To establish and perform transactions between you and us, and for your use of our services</td>
+                                <td>Performance of a Contract</td>
+                            </tr>
+                            <tr>
+                                <td>To respond to inquiries and provide information about our services</td>
+                                <td>Contract performance, legitimate interests</td>
+                            </tr>
+                            <tr>
+                                <td>To prevent and respond to fraudulent activity</td>
+                                <td>Legal obligations, legitimate interests</td>
+                            </tr>
+                            <tr>
+                                <td>To notify about changes of our terms, policies regarding our services</td>
+                                <td>Contract performance, legal obligations</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="sharing" class="guide-section">
+                <h2 class="section-headline">4. Personal Data We Share</h2>
+                <p>1. We will not share personal data with third parties without your consent, except as permitted by law. However, we may share personal data to the extent necessary in the following cases:</p>
+                <ul>
+                    <li>When required by law</li>
+                    <li>When necessary to protect life, body, or property of an individual and in which it is difficult to obtain the consent of the person</li>
+                    <li>When outsourcing all or part of the handling of personal data within the scope necessary to achieve the purpose of use. In such cases, we will exercise necessary and appropriate supervision over the third-party contractors.</li>
+                    <li>When personal data is shared due to a business succession resulting from a merger or other reason</li>
+                    <li>For fraud detection and prevention by the card issuer</li>
+                </ul>
+
+                <p>2. We may share the following information collected from you to the card issuer which you use.</p>
+                <ul>
+                    <li>Name, phone number, email address, information about internet usage environment, etc.</li>
+                </ul>
+
+                <p>Furthermore, if the card issuer which you use is located overseas, this information may be transferred to the country where that issuer is based. Since we cannot identify the specific card issuer which you use or the country where that issuer is located from the information we collected, we are unable to ascertain and provide the following information about personal data protection measures.</p>
+                <ul>
+                    <li>The country name where the card issuer is located</li>
+                    <li>Information about the personal data protection legislation in that country</li>
+                    <li>The card issuer's personal data protection measures</li>
+                </ul>
+
+                <p>Please refer that the Personal Information Protection Commission's website (<a href="https://www.ppc.go.jp/" target="_blank">https://www.ppc.go.jp/</a>). The information is provided on personal information protection legislation in other countries.</p>
+            </section>
+
+            <section id="transfer" class="guide-section">
+                <h2 class="section-headline">5. Data Transfer Outside the EEA</h2>
+                <p>We store and process acquired personal data on servers located in Japan. However, if it becomes necessary to transfer personal data to other countries or regions, the transfer will be conducted with implementing appropriate safeguards required by the GDPR, such as concluding standard contractual clauses (SCC). Japan is subject to an adequacy decision by the EU Commission under the GDPR, ensuring a level of data protection equivalent to that within the EEA.</p>
+            </section>
+
+            <section id="retention" class="guide-section">
+                <h2 class="section-headline">6. Data Retention Period</h2>
+                <p>We retain personal data only as long as reasonably necessary to achieve the purpose of use. The specific retention period is determined considering the type of data, the purpose of use, and legal requirements. After the retention period ends, we securely and reliably erase or anonymize the personal data in accordance with applicable laws.</p>
+            </section>
+
+            <section id="security" class="guide-section">
+                <h2 class="section-headline">7. Security</h2>
+                <p>We will implement necessary and appropriate measures from organizational, human, physical, and technical perspectives to prevent the leakage, loss, or damage of personal data to ensure the security of personal data.</p>
+            </section>
+
+            <section id="rights" class="guide-section">
+                <h2 class="section-headline">8. Your Rights</h2>
+                <p>You may have the following rights about your personal data under applicable laws. If you wish to exercise these rights (hereinafter "Disclosure, etc."), please contact the inquiry window specified in Section 11.</p>
+                <ul>
+                    <li><strong>Right of Disclosure/Access:</strong> The right to request access to your personal data held by us, as well as disclosure of copies or records of provision to third parties.</li>
+                    <li><strong>Right to Rectification:</strong> The right to request the correction, addition, or deletion of your personal data held by us if it is inaccurate.</li>
+                    <li><strong>Right to Erasure (Right to be Forgotten):</strong> The right to request the erasure of your personal data held by us under certain conditions</li>
+                    <li><strong>Right to Restriction of Processing:</strong> The right to request that restrict us for use, erasure, or processing of your personal data under certain conditions</li>
+                    <li><strong>Right to Data Portability:</strong> The right to receive the personal data you have provided to us in a structured, commonly used, machine-readable format and to request transfer to another controller under certain conditions</li>
+                    <li><strong>Right to Object:</strong> The right to object to data processing based on our legitimate interests or for direct marketing purposes</li>
+                    <li><strong>Right to Withdraw Consent:</strong> The right to withdraw consent at any time where personal data is processed based on consent</li>
+                </ul>
+
+                <h3>How to Exercise Your Rights</h3>
+                <p><strong>Where to submit requests:</strong><br>Please submit your request to the inquiry contact listed in Section 11.</p>
+                <p><strong>When submitting a request, please submit the following documents to us. For details, please contact the inquiry window listed in Section 11.</strong></p>
+                <ul>
+                    <li>Our company's prescribed form</li>
+                    <li>Copy of identification documents</li>
+                </ul>
+            </section>
+
+            <section id="children" class="guide-section">
+                <h2 class="section-headline">9. Processing of Personal Data of Children</h2>
+                <p>We do not knowingly collect or process personal data of children (minors) without the consent of their parent or guardian.</p>
+            </section>
+
+            <section id="changes" class="guide-section">
+                <h2 class="section-headline">10. Changes to This Privacy Policy</h2>
+                <p>We may update all or part of this Privacy Policy to ensure the appropriate use and protection of personal data. When there are significant changes, we will notify you clearly, such as through announcements on the Service with informing the effective date.</p>
+            </section>
+
+            <section id="contact" class="guide-section">
+                <h2 class="section-headline">11. Contact Information</h2>
+                <p>If you have any questions, concerns or comments about our handling of personal data or this Privacy Policy, please contact the following office:</p>
+                
+                <div class="contact-info-box">
+                    <p><strong>want.jp Inc.</strong></p>
+                    <p>37F Sumitomo Fudosan Roppongi Grand Tower<br>
+                    3-2-1 Roppongi, Minato-ku, Tokyo, Japan, 106-6237</p>
+                    <p><strong>Representative Director:</strong> Kim Tesong</p>
+                    <p><strong>E-mail:</strong> <a href="mailto:info@want.jp">info@want.jp</a> (Privacy Officer, want.jp Inc.)</p>
+                    <p><strong>Business hours:</strong> Weekdays from 10:00 AM to 6:00 PM (JST)</p>
+                </div>
+            </section>
+
+            <section id="complaint" class="guide-section">
+                <h2 class="section-headline">12. Right to File a Complaint</h2>
+                <p>You may have the right to file a complaint to the data protection supervisory authority in your jurisdiction about our handling of your personal data.</p>
+            </section>
+
+        </article>
+    </main>
+
+    <footer id="global-footer" class="site-footer"></footer>
+
+    <script src="/js/common.js"></script>
+    
+    <script>
+        window.addEventListener('scroll', () => {
+            let current = "";
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.sidebar-nav-link');
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) current = section.getAttribute('id');
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) link.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
